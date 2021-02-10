@@ -1,6 +1,13 @@
 {
   "name": "ng-upload",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Application to Upload Files and View its Details.",
+  "displayName": "NgUpload",
+  "author": {
+    "name": "Lakshman.S",
+    "email": "haranhari_38@outlook.com",
+    "url": "http://bit.ly/lazhIn"
+  },
   "scripts": {
     "ng": "ng",
     "start": "npm run env -s && ng serve --aot --port=5201",
