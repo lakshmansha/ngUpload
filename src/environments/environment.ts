@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  App_Name: "ngUpload",
+  ServerUrl: "http://localhost:5000/api/",
+  FileExtensions: ['.bmp', '.csv', '.doc', '.docx', '.gif', '.jpeg', 
+        '.png', '.jpg', '.pdf', '.ppt', '.pptx', '.rtf', '.txt', '.xls', '.xlsx', '.zip', '.rar'],
+  Extensions: ".bmp, .csv, .doc, .docx, .gif, .jpeg, .png, .jpg, .pdf, .ppt, .pptx, .rtf, .txt, .xls, .xlsx, .zip, .rar"
 };
 
 /*
