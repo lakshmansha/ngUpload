@@ -1,0 +1,22 @@
+
+<h5>Current Upload List</h5>
+<table class="table" *ngIf="List.length > 0">
+    <thead>
+      <tr>        
+        <th scope="col">File Name</th>
+        <th scope="col">File Size</th>
+        <th scope="col">Upload Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let val of List">
+        <td>{{val.fileName}}</td>
+        <td>{{val.fileSizeStr}}</td>
+        <td>{{val.uploadDate}}</td>
+      </tr>      
+  </table>
+  <div class="card" *ngIf="List.length === 0 || List === null">
+    <div class="card-body">
+      No Upload Files Available
+    </div>
+  </div>
