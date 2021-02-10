@@ -16,10 +16,19 @@ describe('ViewAreaComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ViewAreaComponent);
     component = fixture.componentInstance;
+
+    component.List = [];
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('HTML Testing', () => {
+    beforeEach(() => {
+      fixture.detectChanges();
+    });
+  });
+  
 });

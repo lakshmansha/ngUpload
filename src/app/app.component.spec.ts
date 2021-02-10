@@ -1,3 +1,4 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { environment } from '@env/environment';
@@ -15,6 +16,9 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+      ]
     }).compileComponents();
   }));
 
@@ -31,13 +35,7 @@ describe('AppComponent', () => {
   describe('Html Testing', () => {
     beforeEach(() => {
       fixture.detectChanges();
-    });
-
-    it(`should have as title 'ngUpload'`, () => {
-      const fixture = TestBed.createComponent(AppComponent);
-      const app = fixture.componentInstance;
-      expect(app.title).toEqual('ngUpload');
-    });
+    });    
 
     it('should render router', () => {
       fixture.detectChanges();
@@ -62,13 +60,4 @@ describe('AppComponent', () => {
     });
 
   })
-
-
-
-  // it('should render title', () => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   fixture.detectChanges();
-  //   const compiled = fixture.nativeElement;
-  //   expect(compiled.querySelector('.content span').textContent).toContain('ngUpload app is running!');
-  // });
 });

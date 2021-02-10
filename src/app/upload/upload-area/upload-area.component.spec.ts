@@ -1,3 +1,4 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UploadAreaComponent } from './upload-area.component';
@@ -8,6 +9,9 @@ describe('UploadAreaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        HttpClientTestingModule
+      ],
       declarations: [ UploadAreaComponent ]
     })
     .compileComponents();
